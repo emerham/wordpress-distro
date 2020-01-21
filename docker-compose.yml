@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  wordpress:
+    image: emerham-blog:latest
+    build: ./
+    ports:
+    - 80:80
+  database:
+    image: mariadb:10.4
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin1234
+      MYSQL_DATABASE: wp
+      MYSQL_USER: wp
+      MYSQL_PASSWORD: password
+  cache:
+    image: memcached
+    restart: always
