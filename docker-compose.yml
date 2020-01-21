@@ -5,10 +5,10 @@ services:
     image: emerham-blog:latest
     build: ./
     ports:
-    - 80:80
+      - 80:80
   database:
     image: mariadb:10.4
-    restart: always
+    restart: unless-stoped
     environment:
       MYSQL_ROOT_PASSWORD: admin1234
       MYSQL_DATABASE: wp
