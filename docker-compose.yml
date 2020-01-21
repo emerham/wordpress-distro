@@ -6,9 +6,14 @@ services:
     build: ./
     ports:
       - 80:80
+    volumes:
+      - /var/www/html/public/content/mu-plugins
+      - /var/www/html/public/content/plugins
+      - /var/www/html/public/content/themes
+    restart: always
   database:
     image: mariadb:10.4
-    restart: unless-stoped
+    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: admin1234
       MYSQL_DATABASE: wp
