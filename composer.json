@@ -1,0 +1,34 @@
+{
+	"name"        : "emerham/blog",
+	"description" : "An out-of-the-box composer-powered WordPress package inspired by Mark Jaquith's WordPress Skeleton",
+	"type"        : "project",
+	"license"     : "MIT",
+	"repositories": [
+		{
+			"type": "composer",
+			"url" : "https://wpackagist.org"
+		}
+	],
+	"require"     : {
+		"johnpbloch/wordpress": "~5.2",
+		"timber/timber": "^1.14",
+		"vlucas/phpdotenv": "^4.1",
+		"wp-cli/wp-cli": "^2.4",
+		"wpackagist-plugin/w3-total-cache": "^0.12.0"
+	},
+	"require-dev" : {
+		"wpackagist-plugin/regenerate-thumbnails": "*@dev",
+		"wpackagist-plugin/developer"            : "~1",
+		"squizlabs/php_codesniffer": "^3.5",
+		"wp-coding-standards/wpcs": "^2.2",
+		"dealerdirect/phpcodesniffer-composer-installer": "^0.6.0"
+	},
+	"extra"       : {
+		"wordpress-install-dir": "public/wp",
+		"installer-paths"      : {
+			"public/content/plugins/{$name}"   : ["type:wordpress-plugin"],
+			"public/content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
+			"public/content/themes/{$name}"    : ["type:wordpress-theme"]
+		}
+	}
+}
