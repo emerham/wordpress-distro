@@ -14,7 +14,9 @@
 		"timber/timber": "^1.14",
 		"vlucas/phpdotenv": "^4.1",
 		"wp-cli/wp-cli": "^2.4",
-		"wpackagist-plugin/w3-total-cache": "^0.12.0"
+		"wpackagist-plugin/w3-total-cache": "^0.12.0",
+		"composer/semver": "^1.5",
+		"composer/composer": "^1.9"
 	},
 	"require-dev" : {
 		"wpackagist-plugin/regenerate-thumbnails": "*@dev",
