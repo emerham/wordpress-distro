@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03044e46533d8a7cd58f6123ecbb6829",
+    "content-hash": "db0cda1fa0e2dbe9b3fb3f85c9b64581",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -2177,6 +2177,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/developer/"
+        },
+        {
+            "name": "wpackagist-plugin/developer-toolbar",
+            "version": "1.0.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/developer-toolbar/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/developer-toolbar.zip?timestamp=1417472971"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/developer-toolbar/"
         },
         {
             "name": "wpackagist-plugin/regenerate-thumbnails",
