@@ -1577,16 +1577,16 @@
         },
         {
             "name": "timber/timber",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/timber/timber.git",
-                "reference": "a6bbdf5c1d236b35db828050ea72ac97bfd27fc9"
+                "reference": "03861c56fd94d9293b462e9bc5805db288993068"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/timber/timber/zipball/a6bbdf5c1d236b35db828050ea72ac97bfd27fc9",
-                "reference": "a6bbdf5c1d236b35db828050ea72ac97bfd27fc9",
+                "url": "https://api.github.com/repos/timber/timber/zipball/03861c56fd94d9293b462e9bc5805db288993068",
+                "reference": "03861c56fd94d9293b462e9bc5805db288993068",
                 "shasum": ""
             },
             "require": {
@@ -1638,20 +1638,20 @@
                 "timber",
                 "twig"
             ],
-            "time": "2020-01-07T03:17:50+00:00"
+            "time": "2020-02-10T21:19:04+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v2.12.3",
+            "version": "v2.12.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "97b6311585cae66a26833b14b33785f5797f7d39"
+                "reference": "18772e0190734944277ee97a02a9a6c6555fcd94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/97b6311585cae66a26833b14b33785f5797f7d39",
-                "reference": "97b6311585cae66a26833b14b33785f5797f7d39",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/18772e0190734944277ee97a02a9a6c6555fcd94",
+                "reference": "18772e0190734944277ee97a02a9a6c6555fcd94",
                 "shasum": ""
             },
             "require": {
@@ -1703,7 +1703,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-12-28T07:12:03+00:00"
+            "time": "2020-02-11T15:31:23+00:00"
         },
         {
             "name": "upstatement/routes",
@@ -2000,15 +2000,15 @@
         },
         {
             "name": "wpackagist-plugin/w3-total-cache",
-            "version": "0.13.0",
+            "version": "0.13.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.13.0"
+                "reference": "tags/0.13.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.13.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.13.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
