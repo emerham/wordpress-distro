@@ -1,43 +1,57 @@
 {
-	"name"        : "emerham/blog",
-	"description" : "An out-of-the-box composer-powered WordPress package inspired by Mark Jaquith's WordPress Skeleton",
-	"type"        : "project",
-	"license"     : "MIT",
-	"repositories": [
-		{
-			"type": "composer",
-			"url" : "https://wpackagist.org"
-		}
-	],
-	"config": {
-		"sort-packages": true
-	},
-	"require"     : {
-		"composer/composer": "^1.9",
-		"composer/semver": "^1.5",
-		"cweagans/composer-patches": "^1.6",
-		"johnpbloch/wordpress": "~5.2",
-		"timber/timber": "^1.14",
-		"vlucas/phpdotenv": "^4.1",
-		"wp-cli/wp-cli": "^2.4",
-		"wpackagist-plugin/json-feed": "^1.3",
-		"wpackagist-plugin/w3-total-cache": "^0.13.0"
-	},
-	"require-dev" : {
-		"dealerdirect/phpcodesniffer-composer-installer": "^0.6.0",
-		"squizlabs/php_codesniffer": "^3.5",
-		"symfony/var-dumper": "~4.4",
-		"wp-coding-standards/wpcs": "^2.2",
-		"wpackagist-plugin/developer": "~1",
-		"wpackagist-plugin/developer-toolbar": "^1.0",
-		"wpackagist-plugin/regenerate-thumbnails": "^3.1"
-	},
-	"extra"       : {
-		"wordpress-install-dir": "public/wp",
-		"installer-paths"      : {
-			"public/content/plugins/{$name}"   : ["type:wordpress-plugin"],
-			"public/content/mu-plugins/{$name}": ["type:wordpress-muplugin"],
-			"public/content/themes/{$name}"    : ["type:wordpress-theme"]
-		}
-	}
+    "name": "emerham/blog",
+    "description": "An out-of-the-box composer-powered WordPress package inspired by Mark Jaquith's WordPress Skeleton",
+    "type": "project",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "composer/composer": "^1.9",
+        "composer/semver": "^1.5",
+        "cweagans/composer-patches": "^1.6",
+        "johnpbloch/wordpress": "~5.2",
+        "koodimonni/composer-dropin-installer": "^1.2",
+        "timber/timber": "^1.14",
+        "vlucas/phpdotenv": "^4.1",
+        "wp-cli/wp-cli-bundle": "^2.4",
+        "wpackagist-plugin/json-feed": "^1.3",
+        "wpackagist-plugin/memcached-redux": "^0.1.6",
+        "wpackagist-plugin/w3-total-cache": "^0.13.0"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.6.0",
+        "squizlabs/php_codesniffer": "^3.5",
+        "symfony/var-dumper": "~4.4",
+        "wp-coding-standards/wpcs": "^2.2",
+        "wpackagist-plugin/developer": "~1",
+        "wpackagist-plugin/developer-toolbar": "^1.0",
+        "wpackagist-plugin/regenerate-thumbnails": "^3.1"
+    },
+    "extra": {
+        "wordpress-install-dir": "public/wp",
+        "installer-paths": {
+            "public/content/plugins/{$name}": [
+                "type:wordpress-plugin"
+            ],
+            "public/content/mu-plugins/{$name}": [
+                "type:wordpress-muplugin"
+            ],
+            "public/content/themes/{$name}": [
+                "type:wordpress-theme"
+            ]
+        },
+        "dropin-paths": {
+            "public/content/": [
+                "package:wpackagist-plugin/memcached-redux:object-cache.php",
+                "type:wordpress-dropin"
+            ]
+        }
+    }
 }

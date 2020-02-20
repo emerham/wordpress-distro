@@ -4,6 +4,7 @@ public/wp
 public/content/plugins/*
 public/content/themes/*
 public/content/mu-plugins/*
+public/content/*.php
 
 # If you have a plugin, theme, or mu-plugin that you really do want to put into
 # version control, add an exception here. Exceptions will look like this:
@@ -18,3 +19,5 @@ public/local-config.php
 
 # Ignore uploads
 public/content/uploads
+# PHPStorm
+.idea

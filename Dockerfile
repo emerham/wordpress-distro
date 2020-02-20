@@ -23,3 +23,4 @@ RUN set -ex; \
 COPY --chown=www-data:www-data . /var/www/html/
 # Updating the apache launch for public
 RUN sed -i 's/\/html/\/html\/public/g' /etc/apache2/sites-available/000-default.conf
+ENV PATH "$PATH:/var/www/html/vendor/bin"
