@@ -1,4 +1,10 @@
-[composer.{json,lock}]
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = tab
+
+[composer.{json, lock}]
 indent_size = 4
 indent_style = space
-

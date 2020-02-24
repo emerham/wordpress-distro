@@ -7,19 +7,21 @@ RUN set -ex; \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
+        libmagickwand-dev \
         libmemcached-dev \
         zlib1g-dev \
         libzip-dev \
         less \
-    && pecl install memcached-3.1.5 \
+    && pecl install memcached-3.1.5 imagick-3.4.4 \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) \
         gd \
+        exif \
         opcache \
         mysqli \
         pdo_mysql \
         zip \
-    && docker-php-ext-enable memcached;
+    && docker-php-ext-enable memcached imagick;
 COPY --chown=www-data:www-data . /var/www/html/
 # Updating the apache launch for public
 RUN sed -i 's/\/html/\/html\/public/g' /etc/apache2/sites-available/000-default.conf
