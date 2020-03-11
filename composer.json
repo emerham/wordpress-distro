@@ -30,8 +30,8 @@
         "squizlabs/php_codesniffer": "^3.5",
         "symfony/var-dumper": "~4.4",
         "wp-coding-standards/wpcs": "^2.2",
-        "wpackagist-plugin/developer": "~1",
-        "wpackagist-plugin/developer-toolbar": "^1.0",
+        "wpackagist-plugin/debug-bar": "^1.0",
+        "wpackagist-plugin/debug-bar-timber": "^0.3.0",
         "wpackagist-plugin/regenerate-thumbnails": "^3.1"
     },
     "extra": {
