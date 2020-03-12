@@ -21,3 +21,4 @@ public/local-config.php
 public/content/uploads
 # PHPStorm
 .idea
+docker-compose.override.yml

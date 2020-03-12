@@ -4,7 +4,7 @@
 
 // Load composer autoloader if it's available
 if ( file_exists( __DIR__ . '/../vendor/autoload.php' ) ) {
-	include( __DIR__ . '/../vendor/autoload.php' );
+	include __DIR__ . '/../vendor/autoload.php';
 }
 
 // ===================================================
@@ -12,7 +12,7 @@ if ( file_exists( __DIR__ . '/../vendor/autoload.php' ) ) {
 // ===================================================
 if ( file_exists( __DIR__ . '/local-config.php' ) ) {
 	define( 'WP_LOCAL_DEV', true );
-	include( __DIR__ . '/local-config.php' );
+	include __DIR__ . '/local-config.php';
 } else {
 	define( 'WP_LOCAL_DEV', false );
 	define( 'DB_NAME', '%%DB_NAME%%' );
@@ -44,14 +44,14 @@ define( 'DB_COLLATE', '' );
 // Salts, for security
 // Grab these from: https://api.wordpress.org/secret-key/1.1/salt
 // ==============================================================
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
+define( 'AUTH_KEY', 'put your unique phrase here' );
+define( 'SECURE_AUTH_KEY', 'put your unique phrase here' );
+define( 'LOGGED_IN_KEY', 'put your unique phrase here' );
+define( 'NONCE_KEY', 'put your unique phrase here' );
+define( 'AUTH_SALT', 'put your unique phrase here' );
 define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'LOGGED_IN_SALT', 'put your unique phrase here' );
+define( 'NONCE_SALT', 'put your unique phrase here' );
 
 // ==============================================================
 // Table prefix
@@ -82,7 +82,7 @@ define( 'WP_DEBUG_DISPLAY', false );
 // Load a Memcached config if we have one
 // ======================================
 if ( file_exists( __DIR__ . '/memcached.php' ) ) {
-	$memcached_servers = include( __DIR__ . '/memcached.php' );
+	$memcached_servers = include __DIR__ . '/memcached.php';
 }
 
 // ===========================================================================================
@@ -97,4 +97,4 @@ define( 'STAGING_DOMAIN', '%%WP_STAGING_DOMAIN%%' ); // Does magic in WP Stack t
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/wp/' );
 }
-require_once( ABSPATH . 'wp-settings.php' );
+require_once ABSPATH . 'wp-settings.php';
