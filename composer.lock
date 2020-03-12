@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c686aec2626b0d758ec07e2875dc9840",
+    "content-hash": "2e279636779c7a5867e48b78b76812f3",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -4066,24 +4066,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/memcached-redux/"
-        },
-        {
-            "name": "wpackagist-plugin/w3-total-cache",
-            "version": "0.13.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/w3-total-cache/",
-                "reference": "tags/0.13.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.13.1.zip"
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/w3-total-cache/"
         }
     ],
     "packages-dev": [
