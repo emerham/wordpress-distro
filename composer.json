@@ -30,6 +30,8 @@
         "symfony/var-dumper": "~4.4",
         "wp-coding-standards/wpcs": "^2.2",
         "wpackagist-plugin/debug-bar": "^1.0",
+        "wpackagist-plugin/debug-bar-actions-and-filters-addon": "^1.5",
+        "wpackagist-plugin/debug-bar-cache-lookup": "^0.1.1",
         "wpackagist-plugin/debug-bar-timber": "^0.3.0",
         "wpackagist-plugin/regenerate-thumbnails": "^3.1"
     },
