@@ -1971,16 +1971,16 @@
         },
         {
             "name": "timber/timber",
-            "version": "1.15.2",
+            "version": "1.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/timber/timber.git",
-                "reference": "c0856786f5f2bb9bbcca9febc1ae8998d912734b"
+                "reference": "cdae62c0108cd60c256e9bb00d634645eb0127c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/timber/timber/zipball/c0856786f5f2bb9bbcca9febc1ae8998d912734b",
-                "reference": "c0856786f5f2bb9bbcca9febc1ae8998d912734b",
+                "url": "https://api.github.com/repos/timber/timber/zipball/cdae62c0108cd60c256e9bb00d634645eb0127c0",
+                "reference": "cdae62c0108cd60c256e9bb00d634645eb0127c0",
                 "shasum": ""
             },
             "require": {
@@ -1997,7 +1997,7 @@
                 "squizlabs/php_codesniffer": "3.*",
                 "wp-coding-standards/wpcs": "^2.0",
                 "wpackagist-plugin/advanced-custom-fields": "5.*",
-                "wpackagist-plugin/co-authors-plus": "3.2.*"
+                "wpackagist-plugin/co-authors-plus": "3.2.*|3.4.*"
             },
             "suggest": {
                 "satooshi/php-coveralls": "1.0.* for code coverage"
@@ -2032,7 +2032,7 @@
                 "timber",
                 "twig"
             ],
-            "time": "2020-03-24T17:38:21+00:00"
+            "time": "2020-05-18T19:28:12+00:00"
         },
         {
             "name": "twig/twig",
@@ -2152,16 +2152,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v4.1.5",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "539bb6927c101a5605d31d11a2d17185a2ce2bf1"
+                "reference": "0b32505d67c1abbfa829283c86bfc0642a661bf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/539bb6927c101a5605d31d11a2d17185a2ce2bf1",
-                "reference": "539bb6927c101a5605d31d11a2d17185a2ce2bf1",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/0b32505d67c1abbfa829283c86bfc0642a661bf6",
+                "reference": "0b32505d67c1abbfa829283c86bfc0642a661bf6",
                 "shasum": ""
             },
             "require": {
@@ -2222,7 +2222,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-02T14:08:57+00:00"
+            "time": "2020-05-23T09:43:32+00:00"
         },
         {
             "name": "wp-cli/cache-command",
@@ -4552,15 +4552,15 @@
         },
         {
             "name": "wpackagist-plugin/debug-bar",
-            "version": "1.0",
+            "version": "1.0.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/debug-bar/",
-                "reference": "tags/1.0"
+                "reference": "tags/1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/debug-bar.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/debug-bar.1.0.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
