@@ -20,5 +20,5 @@ services:
       MYSQL_USER: wp
       MYSQL_PASSWORD: password
   cache:
-    image: memcached
+    image: memcached:1.6
     restart: always
