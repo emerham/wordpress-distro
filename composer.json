@@ -16,7 +16,6 @@
     "require": {
         "composer/semver": "^1.5",
         "cweagans/composer-patches": "^1.6",
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
         "johnpbloch/wordpress": "~5.2",
         "koodimonni/composer-dropin-installer": "^1.2",
         "timber/timber": "^1.14",
@@ -26,6 +25,7 @@
         "wpackagist-plugin/memcached-redux": "^0.1.6"
     },
     "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
         "squizlabs/php_codesniffer": "^3.5",
         "symfony/var-dumper": "~4.4",
         "wp-coding-standards/wpcs": "^2.2",
