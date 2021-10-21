@@ -1,1 +1,1 @@
-composer.lock -diff
+*.php	diff=php
