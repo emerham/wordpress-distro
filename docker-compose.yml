@@ -1,24 +1,40 @@
-version: '3.7'
+version: '3.8'
 
 services:
   wordpress:
     image: emerham-blog:latest
     build: ./
-    ports:
-      - 80:80
+    labels:
+      - traefik.http.routers.emerham-wordpress.rule=Host(`blogs.emerham.com`)
     volumes:
       - /var/www/html/public/content/mu-plugins
       - /var/www/html/public/content/plugins
       - /var/www/html/public/content/themes
+    cap_add:
+      - CAP_NET_BIND_SERVICE
+      - CAP_DAC_OVERRIDE
+    networks:
+      - proxy
+      - internal
     restart: always
   database:
     image: mariadb:10.4
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: admin1234
       MYSQL_DATABASE: wp
       MYSQL_USER: wp
       MYSQL_PASSWORD: password
+    networks:
+      - internal
+    restart: always
   cache:
     image: memcached:1.6
+    command: ["memcached", "-m", "80"]
+    networks:
+      - internal
     restart: always
+networks:
+  proxy:
+    external: true
+  internal:
+    external: false
