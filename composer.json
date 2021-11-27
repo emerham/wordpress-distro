@@ -14,7 +14,6 @@
         "sort-packages": true
     },
     "require": {
-        "composer/semver": "^1.5",
         "cweagans/composer-patches": "^1.6",
         "johnpbloch/wordpress": "~5.2",
         "koodimonni/composer-dropin-installer": "^1.2",
