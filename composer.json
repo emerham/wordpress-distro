@@ -11,7 +11,14 @@
         }
     ],
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "composer/installers": true,
+            "johnpbloch/wordpress-core-installer": true,
+            "cweagans/composer-patches": true,
+            "koodimonni/composer-dropin-installer": true
+        }
     },
     "require": {
         "cweagans/composer-patches": "^1.6",
