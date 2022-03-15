@@ -18,7 +18,7 @@ services:
       - internal
     restart: always
   database:
-    image: mariadb:10.4
+    image: mariadb:10.7
     environment:
       MYSQL_ROOT_PASSWORD: admin1234
       MYSQL_DATABASE: wp
