@@ -28,7 +28,7 @@ services:
       - internal
     restart: always
   cache:
-    image: memcached:1.6
+    image: memcached:latest
     command: ["memcached", "-m", "80"]
     networks:
       - internal
