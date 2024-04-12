@@ -24,7 +24,7 @@
         "cweagans/composer-patches": "^1.6",
         "johnpbloch/wordpress": "~5.2",
         "koodimonni/composer-dropin-installer": "^1.2",
-        "timber/timber": "^1.14",
+        "timber/timber": "^2.1",
         "vlucas/phpdotenv": "^4.1",
         "wp-cli/wp-cli-bundle": "^2.4",
         "wpackagist-plugin/json-feed": "^1.3",
